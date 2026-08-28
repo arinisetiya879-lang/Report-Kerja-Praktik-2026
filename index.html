@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>USV Surveying Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+  <main class="phone">
+    <section class="hero">
+      <div class="eyebrow">KERJA PRAKTIK • 2026</div>
+      <h1>USV Surveying<br><span>Project</span></h1>
+      <p>Bathymetric Survey • CHCNAV Apache 6<br>PT Hidronav × Teknik Geodesi UNDIP</p>
+    </section>
+
+    <section class="featured" onclick="openImage('assets/banner.webp','Poster / Banner Project')">
+      <img src="assets/banner.webp" alt="Banner USV">
+      <div class="shade"></div>
+      <div class="featured-copy">
+        <small>FEATURED PROJECT</small>
+        <strong>Survei Batimetri Perairan Dangkal</strong>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-head"><span>Hasil Peta Batimetri</span><small>3 metode</small></div>
+      <div class="map-grid">
+        <button class="map-card" onclick="openImage('assets/idw.webp','Peta Batimetri IDW')"><img src="assets/idw.webp"><b>IDW</b><span>Inverse Distance Weighted</span></button>
+        <button class="map-card" onclick="openImage('assets/tin.webp','Peta Batimetri TIN')"><img src="assets/tin.webp"><b>TIN</b><span>Triangulated Irregular Network</span></button>
+        <button class="map-card" onclick="openImage('assets/kriging.webp','Peta Batimetri Kriging')"><img src="assets/kriging.webp"><b>Kriging</b><span>Geostatistical interpolation</span></button>
+      </div>
+    </section>
+
+    <section class="links">
+      <button class="link-card" onclick="openImage('assets/banner.webp','Poster / Banner Project')">
+        <div class="ico">▤</div><div><b>Poster / Banner Project</b><span>Lihat versi preview ringan</span></div><i>›</i>
+      </button>
+      <button class="link-card" onclick="openGallery()">
+        <div class="ico">⌑</div><div><b>Dokumentasi Survei</b><span>Lapangan & pengolahan data</span></div><i>›</i>
+      </button>
+      <a class="link-card primary" href="https://arinisetiya879-lang.github.io/usv-surveying-hub/" target="_blank">
+        <div class="ico">↗</div><div><b>USV Surveying Hub</b><span>Kunjungi website utama</span></div><i>›</i>
+      </a>
+    </section>
+
+    <footer><span>PT HIDRONAV</span><span>×</span><span>GEODESI UNDIP</span></footer>
+  </main>
+</div>
+
+<div id="imageModal" class="modal" onclick="closeImage(event)">
+  <div class="image-box">
+    <div class="modal-head"><h2 id="imageTitle"></h2><button onclick="closeImage()">×</button></div>
+    <img id="largeImage" src="" alt="">
+  </div>
+</div>
+
+<div id="gallery" class="modal" onclick="closeGallery(event)">
+  <div class="modal-box">
+    <div class="modal-head"><div><small>DOKUMENTASI</small><h2>Kegiatan Survei</h2></div><button onclick="closeGallery()">×</button></div>
+    <div class="gallery-grid">
+      <img src="assets/doc_1.webp" alt="Dokumentasi 1">
+<img src="assets/doc_10.webp" alt="Dokumentasi 2">
+<img src="assets/doc_11.webp" alt="Dokumentasi 3">
+<img src="assets/doc_12.webp" alt="Dokumentasi 4">
+<img src="assets/doc_2.webp" alt="Dokumentasi 5">
+<img src="assets/doc_3.webp" alt="Dokumentasi 6">
+<img src="assets/doc_4.webp" alt="Dokumentasi 7">
+<img src="assets/doc_5.webp" alt="Dokumentasi 8">
+<img src="assets/doc_6.webp" alt="Dokumentasi 9">
+<img src="assets/doc_7.webp" alt="Dokumentasi 10">
+<img src="assets/doc_8.webp" alt="Dokumentasi 11">
+<img src="assets/doc_9.webp" alt="Dokumentasi 12">
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

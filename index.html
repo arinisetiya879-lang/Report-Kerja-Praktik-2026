@@ -3,52 +3,87 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>USV Surveying Project</title>
+<title>USV Surveying Project • Apache 6</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page">
-  <main class="phone">
+<div class="page-shell">
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark">U</div>
+        <div><b>UNDIP × HIDRONAV</b><span>Survey Solution</span></div>
+      </div>
+      <a class="site-btn" href="https://arinisetiya879-lang.github.io/usv-surveying-hub/" target="_blank">Lihat Website USV <span>→</span></a>
+    </header>
+
     <section class="hero">
-      <div class="eyebrow">KERJA PRAKTIK • 2026</div>
-      <h1>USV Surveying<br><span>Project</span></h1>
-      <p>Bathymetric Survey • CHCNAV Apache 6<br>PT Hidronav × Teknik Geodesi UNDIP</p>
+      <div class="hero-copy">
+        <span class="kicker">KERJA PRAKTIK • 2026</span>
+        <h1>USV Surveying<br><em>Project</em></h1>
+        <p>Bathymetric Survey • CHCNAV Apache 6<br>PT Hidronav × Teknik Geodesi UNDIP</p>
+        <div class="badge">CHCNAV APACHE 6</div>
+      </div>
+      <div class="boat-wrap" aria-label="Ilustrasi CHCNAV Apache 6">
+        <div class="water"></div>
+        <div class="boat">
+          <div class="hull hull1"></div>
+          <div class="hull hull2"></div>
+          <div class="deck"></div>
+          <div class="cabin"></div>
+          <div class="mast"></div>
+          <div class="antenna a1"></div><div class="antenna a2"></div>
+          <div class="orange-line"></div>
+          <div class="boat-label">APACHE 6</div>
+        </div>
+      </div>
     </section>
 
-    <section class="featured" onclick="openImage('banner.webp','Poster / Banner Project')">
-      <img src="banner.webp" alt="Banner USV">
-      <div class="shade"></div>
-      <div class="featured-copy">
+    <section class="featured-card" onclick="openImage('banner.jpg','Poster / Banner Project')">
+      <img src="banner.jpg" alt="Banner USV" class="blurred-banner">
+      <div class="featured-overlay">
         <small>FEATURED PROJECT</small>
-        <strong>Survei Batimetri Perairan Dangkal</strong>
+        <h2>Survei Batimetri<br>Perairan Dangkal</h2>
+        <span>Klik untuk melihat banner jelas</span>
       </div>
     </section>
 
-    <section>
-      <div class="section-head"><span>Hasil Peta Batimetri</span><small>3 metode</small></div>
+    <section class="maps">
+      <div class="section-title">
+        <div><small>HASIL UTAMA</small><h3>Hasil Peta Batimetri</h3></div>
+        <span>3 metode</span>
+      </div>
       <div class="map-grid">
-        <button class="map-card" onclick="openImage('idw.webp','Peta Batimetri IDW')"><img src="idw.webp"><b>IDW</b><span>Inverse Distance Weighted</span></button>
-        <button class="map-card" onclick="openImage('tin.webp','Peta Batimetri TIN')"><img src="tin.webp"><b>TIN</b><span>Triangulated Irregular Network</span></button>
-        <button class="map-card" onclick="openImage('kriging.webp','Peta Batimetri Kriging')"><img src="kriging.webp"><b>Kriging</b><span>Geostatistical interpolation</span></button>
+        <button class="map-card" onclick="openImage('idw.webp','Peta Batimetri IDW')">
+          <img src="idw.webp"><div><b>IDW</b><span>Inverse Distance Weighted</span></div>
+        </button>
+        <button class="map-card" onclick="openImage('tin.webp','Peta Batimetri TIN')">
+          <img src="tin.webp"><div><b>TIN</b><span>Triangulated Irregular Network</span></div>
+        </button>
+        <button class="map-card" onclick="openImage('kriging.webp','Peta Batimetri Kriging')">
+          <img src="kriging.webp"><div><b>Kriging</b><span>Geostatistical interpolation</span></div>
+        </button>
       </div>
     </section>
 
-    <section class="links">
-      <button class="link-card" onclick="openImage('banner.webp','Poster / Banner Project')">
-        <div class="ico">▤</div><div><b>Poster / Banner Project</b><span>Lihat versi preview ringan</span></div><i>›</i>
+    <section class="quick-links">
+      <button class="link-card" onclick="openImage('banner.jpg','Poster / Banner Project')">
+        <div class="icon">▧</div><div><b>Poster / Banner Project</b><span>Banner tampil blur di halaman utama, klik untuk versi jelas</span></div><i>→</i>
       </button>
       <button class="link-card" onclick="openGallery()">
-        <div class="ico">⌑</div><div><b>Dokumentasi Survei</b><span>Lapangan & pengolahan data</span></div><i>›</i>
+        <div class="icon">⌑</div><div><b>Dokumentasi Survei</b><span>Lapangan & pengolahan data</span></div><i>→</i>
       </button>
-      <a class="link-card primary" href="https://arinisetiya879-lang.github.io/usv-surveying-hub/" target="_blank">
-        <div class="ico">↗</div><div><b>USV Surveying Hub</b><span>Kunjungi website utama</span></div><i>›</i>
+      <a class="link-card dark" href="https://arinisetiya879-lang.github.io/usv-surveying-hub/" target="_blank">
+        <div class="icon">↗</div><div><b>USV Surveying Hub</b><span>Kunjungi website katalog CHCNAV Apache</span></div><i>→</i>
       </a>
     </section>
 
-    <footer><span>PT HIDRONAV</span><span>×</span><span>GEODESI UNDIP</span></footer>
+    <footer>
+      <span>Teknik Geodesi UNDIP</span><span>•</span><span>PT Hidronav Tehnikatama</span>
+    </footer>
   </main>
 </div>
 
@@ -78,6 +113,7 @@
     </div>
   </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
